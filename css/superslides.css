@@ -1,0 +1,150 @@
+#slides {
+  position: relative;
+}
+#slides .slides-container {
+  display: none;
+  
+}
+#slides .scrollable {
+  *zoom: 1;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+}
+#slides .scrollable:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.slides-navigation {
+  margin: 0 auto;
+  position: absolute;
+  z-index: 3;
+  top: 46%;
+  width: 100%;
+}
+.slides-navigation a {
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  text-decoration: none;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  line-height: 40px;
+  font-weight: bold;
+  border-radius: 50%;
+}
+.slides-navigation a:hover {
+  background: #000;
+
+
+}
+.slides-navigation a.prev {
+  left: 0;
+}
+.slides-navigation a.next {
+  right: 0;
+}
+
+.slides-pagination {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+.slides-pagination a {
+  border: 2px solid #222;
+  border-radius: 15px;
+  width: 10px;
+  height: 10px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+   margin: 2px;
+  overflow: hidden;
+  text-indent: -100%;
+}
+.slides-pagination a.current {
+  background: #222;
+}
+
+.description {
+  background: rgba(0,0,0,0);
+  padding: 20px;
+  position: absolute;
+bottom:-120px;
+  left: 48%;
+  width:100%;
+  transform: translateX(-50%) translateY(-50%);
+  overflow-wrap: break-word;
+  overflow: hidden;
+
+}
+
+.description_title {
+  font-size:38px;
+   color: white;
+  font-family: 'Pacifico';
+  font-weight:bolder;
+  text-align: center;
+
+
+
+
+}
+
+.description_text{
+     color: white;
+      font-family: 'Pacifico', cursive;
+      font-size: 30px;
+     
+
+}
+
+.foto {
+    max-width:100%;
+  max-height:100%;
+
+}
+.logo {
+    max-width:8%;
+  max-height:10%;
+  border-radius: 10px;
+
+}
+
+.desfoto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width:88%;
+  height: 75%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 1;
+
+}
+
+
+.contenedor {
+  background: rgba(0,0,0,0.6);
+  padding:10px;
+  position:absolute;  
+  top:5%;
+  width:90%;
+  height:85%;
+  left:3%;
+  overflow: hidden;
+}
+
